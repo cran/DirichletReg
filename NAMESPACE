@@ -1,0 +1,22 @@
+export(DR_data)
+export(getdata)
+
+export(rdirichlet)
+export(ddirichlet)
+
+export(print.DirichletRegData) ; S3method(print, DirichletRegData)
+export(plot.DirichletRegData)  ; S3method(plot, DirichletRegData)
+
+export(DirichReg)
+export(print.DirichletRegModel) ; S3method(print, DirichletRegModel)
+export(summary.DirichletRegModel) ; S3method(summary, DirichletRegModel)
+export(fitted.DirichletRegModel) ; S3method(fitted, DirichletRegModel)
+export(predict.DirichletRegModel) ; S3method(predict, DirichletRegModel)
+export(residuals.DirichletRegModel) ; S3method(residuals, DirichletRegModel)
+export(anova.DirichletRegModel) ; S3method(anova, DirichletRegModel)
+export(vcov.DirichletRegModel) ; S3method(vcov, DirichletRegModel)
+export(vcov.DirichletRegModel) ; S3method(coef, DirichletRegModel)
+export(logLik.DirichletRegModel) ; S3method(logLik, DirichletRegModel)
+export(confint.DirichletRegModel) ; S3method(confint, DirichletRegModel)
+
+export(print.DirichletRegConfint) ; S3method(print, DirichletRegConfint)
