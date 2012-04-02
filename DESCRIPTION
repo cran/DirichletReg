@@ -1,21 +1,27 @@
 Package: DirichletReg
 Type: Package
-Version: 0.3-0
-Date: 2011-10-24
+Version: 0.4-0
+Date: 2012-04-02
 Title: Dirichlet Regression in R
-Author@R: person( c("Marco", "J."), "Maier", email =
-        "marco.maier@wu.ac.at", role = c("cre","aut"))
-Author: Marco J. Maier <marco.maier@wu.ac.at>
+Authors@R: person(given = c("Marco", "J."), family = "Maier", email =
+        "marco.maier@wu.ac.at", role = c("cre", "aut"))
+Author: Marco J. Maier
 Maintainer: Marco J. Maier <marco.maier@wu.ac.at>
-Depends: R (>= 2.13.0), maxLik, rgl, colorspace
-Suggests: betareg
+Encoding: latin1
+Depends: R (>= 2.15.0), maxLik, Formula, rgl
+Imports: stats, graphics, methods
+Suggests: colorspace
 Description: Implements the Dirichlet Regression in R
 License: GPL (>= 2)
-URL: http://www.r-project.org/
+URL: http://dirichletreg.r-forge.r-project.org/
         http://r-forge.r-project.org/projects/dirichletreg/
-Imports: maxLik, rgl, colorspace
-LazyData: yes
+        http://cran.at.r-project.org/web/packages/DirichletReg/
+ByteCompile: yes
 LazyLoad: yes
-Packaged: 2011-10-27 12:06:35 UTC; maier
+LazyData: yes
+ZipData: yes
 Repository: CRAN
-Date/Publication: 2011-10-27 20:02:10
+Repository/R-Forge/Project: dirichletreg
+Repository/R-Forge/Revision: 14
+Packaged: 2012-04-03 10:15:31 UTC; rforge
+Date/Publication: 2012-09-06 06:24:08
