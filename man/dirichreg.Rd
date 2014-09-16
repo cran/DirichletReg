@@ -1,3 +1,4 @@
+\encoding{UTF-8}
 \name{DirichReg}
 \alias{DirichReg}
 \title{Fitting a Dirichlet Regression}
@@ -22,7 +23,7 @@ DirichReg(formula, data, model = c("common", "alternative"),
 \details{
   \subsection{Formula Specification and Models}{
     \code{formula} determines the used predictors.
-    The responses \strong{must} be prepared by \code{\link{DR_data}} and can be optionally stored in the object containing all covariates which is then specified as the argument \code{data} (\sQuote{on-the-fly} processing is not implemented yet).
+    The responses \strong{must} be prepared by \code{\link{DR_data}} and can be optionally stored in the object containing all covariates which is then specified as the argument \code{data} (\dQuote{on-the-fly} processing is not implemented yet).
     
     There are two different parametrization (controlled by the argument \code{model}, see below):
     \itemize{
@@ -87,7 +88,7 @@ DirichReg(formula, data, model = c("common", "alternative"),
 \item{Y}{[\code{numeric}] used components}
 \item{X}{[\code{numeric list}] sets of predictors}
 \item{Z}{[\code{numeric list}] sets of predictors (only for the alternative parametrization)}
-\item{subset}{[\code{logical}] a vector determining in/exclusion of observations}
+%\item{subset}{[\code{logical}] a vector determining in/exclusion of observations}
 \item{sub.comp}{[\code{numeric}] vector of single components}
 \item{base}{[\code{numeric}] base (only for the alternative parametrization)}
 \item{weights}{[\code{numeric}] vector of frequency weights}
@@ -106,9 +107,7 @@ DirichReg(formula, data, model = c("common", "alternative"),
 \item{se}{[\code{numeric}] vector of standard errors}
 \item{optimization}{[\code{list}] contains details about the optimization process provided by \code{\link[maxLik]{maxBFGS}} and \code{\link[maxLik]{maxNR}}}
 }
-\author{
-  Marco Maier
-}
+\author{Marco J. Maier}
 \examples{
 ALake <- ArcticLake
 ALake$Y <- DR_data(ALake[,1:3])
