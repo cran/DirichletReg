@@ -1,5 +1,5 @@
 ### R code from vignette source 'DirichletReg-vig.Rnw'
-### Encoding: ISO8859-1
+### Encoding: UTF-8
 
 ###################################################
 ### code chunk number 1: global-settings
@@ -15,7 +15,7 @@ library("DirichletReg")
 
 
 ###################################################
-### code chunk number 2: DirichletReg-vig.Rnw:84-87
+### code chunk number 2: DirichletReg-vig.Rnw:86-89
 ###################################################
 library("DirichletReg")
 head(ArcticLake)
@@ -23,7 +23,7 @@ AL <- DR_data(ArcticLake[,1:3])
 
 
 ###################################################
-### code chunk number 3: DirichletReg-vig.Rnw:89-90
+### code chunk number 3: DirichletReg-vig.Rnw:91-92
 ###################################################
 AL[1:6,]
 
@@ -43,13 +43,13 @@ AL[1:6,]
 
 
 ###################################################
-### code chunk number 6: DirichletReg-vig.Rnw:104-105
+### code chunk number 6: DirichletReg-vig.Rnw:106-107
 ###################################################
 plot(AL, cex=.5, a2d=list(colored=FALSE, c.grid=FALSE))
 
 
 ###################################################
-### code chunk number 7: DirichletReg-vig.Rnw:108-109
+### code chunk number 7: DirichletReg-vig.Rnw:110-111
 ###################################################
 plot(rep(ArcticLake$depth,3),as.numeric(AL),
      pch=21, bg=rep(c("#E495A5", "#86B875", "#7DB0DD"),each=39),                # colorspace : rainbow_hcl(3)
@@ -57,7 +57,7 @@ plot(rep(ArcticLake$depth,3),as.numeric(AL),
 
 
 ###################################################
-### code chunk number 8: DirichletReg-vig.Rnw:113-116
+### code chunk number 8: DirichletReg-vig.Rnw:115-118
 ###################################################
 lake1 <- DirichReg(AL~depth, ArcticLake)
 lake1
@@ -65,14 +65,14 @@ coef(lake1)
 
 
 ###################################################
-### code chunk number 9: DirichletReg-vig.Rnw:118-120
+### code chunk number 9: DirichletReg-vig.Rnw:120-122
 ###################################################
 lake2 <- update(lake1, .~.+I(depth^2)|.+I(depth^2)|.+I(depth^2))
 anova(lake1,lake2)
 
 
 ###################################################
-### code chunk number 10: DirichletReg-vig.Rnw:122-123
+### code chunk number 10: DirichletReg-vig.Rnw:124-125
 ###################################################
 summary(lake2)
 
@@ -96,7 +96,7 @@ summary(lake2)
 
 
 ###################################################
-### code chunk number 12: DirichletReg-vig.Rnw:142-143
+### code chunk number 12: DirichletReg-vig.Rnw:144-145
 ###################################################
 par(mar=c(4, 4, 4, 4)+0.1)
 plot(rep(ArcticLake$depth,3),as.numeric(AL),
@@ -114,7 +114,7 @@ legend("top",legend=c(expression(hat(mu[c]==hat(alpha)[c]/hat(alpha)[0])),expres
 
 
 ###################################################
-### code chunk number 13: DirichletReg-vig.Rnw:147-154
+### code chunk number 13: DirichletReg-vig.Rnw:149-156
 ###################################################
 AL <- ArcticLake
 AL$AL <- DR_data(ArcticLake[,1:3])
@@ -144,7 +144,7 @@ pp <- predict(DirichReg(AL~depth+I(depth^2),AL), X)
 
 
 ###################################################
-### code chunk number 15: DirichletReg-vig.Rnw:173-174
+### code chunk number 15: DirichletReg-vig.Rnw:175-176
 ###################################################
 plot(AL$AL, cex=.1, reset_par=FALSE)
 points(toSimplex(AL$AL), pch=16, cex=.5, col=gray(.5))
@@ -162,14 +162,14 @@ lines(toSimplex(p2m), lwd=3, col=c("#6E1D34", "#004E42")[1], lty="21")   # color
 
 
 ###################################################
-### code chunk number 16: DirichletReg-vig.Rnw:179-181
+### code chunk number 16: DirichletReg-vig.Rnw:181-183
 ###################################################
 Bld <- BloodSamples
 Bld$Smp <- DR_data(Bld[,1:4])
 
 
 ###################################################
-### code chunk number 17: DirichletReg-vig.Rnw:183-186
+### code chunk number 17: DirichletReg-vig.Rnw:185-188
 ###################################################
 blood1 <- DirichReg(Smp~Disease|1, Bld, model="alternative", base=3)
 blood2 <- DirichReg(Smp~Disease|Disease, Bld, model="alternative", base=3)
@@ -177,7 +177,7 @@ anova(blood1, blood2)
 
 
 ###################################################
-### code chunk number 18: DirichletReg-vig.Rnw:188-189
+### code chunk number 18: DirichletReg-vig.Rnw:190-191
 ###################################################
 summary(blood1)
 
@@ -194,7 +194,7 @@ summary(blood1)
 
 
 ###################################################
-### code chunk number 20: DirichletReg-vig.Rnw:201-202
+### code chunk number 20: DirichletReg-vig.Rnw:203-204
 ###################################################
 par(mfrow=c(1,4), mar=c(4,4,4,2)+.25)
 for(i in 1:4){
@@ -205,7 +205,7 @@ for(i in 1:4){
 
 
 ###################################################
-### code chunk number 21: DirichletReg-vig.Rnw:207-212
+### code chunk number 21: DirichletReg-vig.Rnw:209-214
 ###################################################
 alpha <- predict(blood2, data.frame(Disease=factor(c("A","B"))), F, T, F)
 L <- sapply(1:2, function(i) ddirichlet(DR_data(Bld[31:36,1:4]), unlist(alpha[i,])))
@@ -235,7 +235,7 @@ print(data.frame(round(LP * 100, 1),"pred."=as.factor(ifelse(LP[,1]>LP[,2], "==>
 
 
 ###################################################
-### code chunk number 23: DirichletReg-vig.Rnw:233-234
+### code chunk number 23: DirichletReg-vig.Rnw:235-236
 ###################################################
 B2 <- DR_data(BloodSamples[,c(1,2,4)])
 plot(B2, cex=.001, reset_par=FALSE)
@@ -255,7 +255,7 @@ legend("topright", bty="n", legend=c("Disease A","Disease B",NA,"Expected Values
 
 
 ###################################################
-### code chunk number 24: DirichletReg-vig.Rnw:240-247
+### code chunk number 24: DirichletReg-vig.Rnw:242-249
 ###################################################
 RS <- ReadingSkills
 RS$acc <- DR_data(RS$accuracy)
@@ -303,7 +303,7 @@ anova(rs1,rs2)
 
 
 ###################################################
-### code chunk number 26: DirichletReg-vig.Rnw:284-285
+### code chunk number 26: DirichletReg-vig.Rnw:286-287
 ###################################################
 g.ind <- as.numeric(RS$dyslexia)
 g1 <- g.ind == 1   # normal
@@ -339,7 +339,7 @@ legend("topleft",legend=c(expression(hat(mu)),expression(hat(phi)),"OLS"),lty=c(
 
 
 ###################################################
-### code chunk number 27: DirichletReg-vig.Rnw:289-293
+### code chunk number 27: DirichletReg-vig.Rnw:291-295
 ###################################################
 a <- RS$accuracy
 logRa_a <- log(a/(1-a))
@@ -348,13 +348,13 @@ summary(rlr)
 
 
 ###################################################
-### code chunk number 28: DirichletReg-vig.Rnw:295-296
+### code chunk number 28: DirichletReg-vig.Rnw:297-298
 ###################################################
 summary(rs2)
 
 
 ###################################################
-### code chunk number 29: DirichletReg-vig.Rnw:298-300
+### code chunk number 29: DirichletReg-vig.Rnw:300-302
 ###################################################
 confint(rs2)
 confint(rs2, exp=TRUE)
@@ -386,7 +386,7 @@ confint(rs2, exp=TRUE)
 
 
 ###################################################
-### code chunk number 31: DirichletReg-vig.Rnw:326-327
+### code chunk number 31: DirichletReg-vig.Rnw:328-329
 ###################################################
 gcol <- c("#E495A5", "#39BEB1")[3-as.numeric(RS$dyslexia)]                      # colorspace : rainbow_hcl(2)
 tmt <- c(-3,3)

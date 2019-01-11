@@ -15,5 +15,5 @@ ReadDisc}
     \item{\code{iq}}{non-verbal \acronym{IQ} (\eqn{z}{z}-scores; \eqn{\mu=0}{mean = 0}, \eqn{\sigma^2=1}{sigma² = 1})}
   }
 }
-\source{Example 3 from \url{http://psychology3.anu.edu.au/people/smithson/details/betareg/betareg.html}}
+\source{Example 3 from \samp{http://psychology3.anu.edu.au/people/smithson/details/betareg/betareg.html} (no longer valid)}
 \keyword{datasets}

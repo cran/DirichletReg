@@ -1,4 +1,4 @@
-ccfc56512bef5dd932186e1b2fe074ed *DESCRIPTION
+4373c6dbdad98f9c0b2d2ba77270c94d *DESCRIPTION
 425d536ad041fd9824542121a56a06e6 *NAMESPACE
 1402fc10cb88e1cbdc49232615262e80 *NEWS
 706e5285d20ba64790edb0df64d24a54 *R/AIC.DirichletRegModel.R
@@ -37,8 +37,8 @@ f161e40dcdc60ade1d27edae1d7d432e *R/toTernaryQuaternary.R
 ecdda9e6aa27d081fc473df1525948f4 *R/update.DirichletRegModel.R
 98038aaa439e5a9f0523b98538bcd274 *R/vcov.DirichletRegModel.R
 b46e276e15d6dd97bf6cbb4d75bf6af5 *R/zzz.R
-a21c1e91e00cdbefe0340809fed4b63e *build/partial.rdb
-8c9de6535fb765a69aa1a812ebff90fc *build/vignette.rds
+d912b97a02ccb6080281dd5a601ff307 *build/partial.rdb
+a18c56e6878301e9bbb4b9f120146eaa *build/vignette.rds
 4f1839de73ad5ea5dd4733ca9eacc32a *data/ArcticLake.RData
 ff03d01074b5bb0ec4078a08c62ce7b0 *data/BloodSamples.RData
 e6ddab6097f20be0a9978432dd7b12b7 *data/GlacialTills.RData
@@ -47,9 +47,9 @@ cfc75461292b6e96dd2e204446c03af2 *data/ReadingSkills.RData
 cec2565ec66a8a9b6796f31090e46678 *inst/CITATION
 678ff2725d67453ac39ee6ad4c40d57c *inst/NEWS.Rd
 f9787a8f4459afdbb75dac61fee5b5c5 *inst/NEWS.pdf
-4158faacfafbaa39983cc8ed77306a47 *inst/doc/DirichletReg-vig.R
-2eed7be9c9ec5345da16cc3a53fc1398 *inst/doc/DirichletReg-vig.Rnw
-da138cf00208aace3b3c36dbc45bc389 *inst/doc/DirichletReg-vig.pdf
+db67853d62e15533babad453964b82d8 *inst/doc/DirichletReg-vig.R
+630cf797f967aeffcce545af55ff60e1 *inst/doc/DirichletReg-vig.Rnw
+65ae88643fa3b12ec4c83cfbba56ad1d *inst/doc/DirichletReg-vig.pdf
 06ee6b239189c143b230cc6e27b51d82 *man/ArcticLake.Rd
 6cb4f29405990bdd640b69b022616d3a *man/BloodSamples.Rd
 8b12252356c07072f7434acd5b4ff2de *man/DR_data.Rd
@@ -57,13 +57,14 @@ da138cf00208aace3b3c36dbc45bc389 *inst/doc/DirichletReg-vig.pdf
 b400f09e0c1ac05d08e150f36005ea5a *man/DirichletReg-package.Rd
 5520bc995179871ddc702aa7a6a4c23a *man/DirichletRegModel.Rd
 5e0eac440eb405027320941fc6644b22 *man/GlacialTills.Rd
-ad39152935a8799a8872683faa086eb3 *man/ReadingSkills.Rd
+f1a55991eef51a86c260858759b15388 *man/ReadingSkills.Rd
 24e4f2d347c3b86843e03b948a93d91a *man/Rocks.Rd
 a34a37a253e5894bd67e9a3c7796faf4 *man/anova.DirichletRegModel.Rd
 691a6bcd75a67568789c321c4e7f49d0 *man/dirichreg.Rd
 b25661b08d761e4821dc562684864456 *man/plot.DirichletRegData.Rd
 22c465e657adeabd10a6c48a4f92fa1e *man/toTernaryQuaternary.Rd
 b33ad5f6507b3034c96a3599c1aa2457 *src/ddirichlet.c
+0a75b23f881d0d0334cdf2d15901f11e *src/init.c
 0460d5d3947b3f0b16160181baab1178 *src/rdirichlet.c
 516eafc69456292b13d305f75a18a29a *src/wght_LL.c
 a703e3a4b77de410132bae5819a51f2e *src/wght_LL_grad_alternative.c
@@ -77,4 +78,4 @@ a422ddb56b7b65f97f8adecbc0a3428b *tests/testthat/testdata/resA2_1.RData
 310559854e8beae041c831d70ae9c306 *tests/testthat/testdata/resC2.RData
 2ace1311bb133dd1fe214887d7d08807 *tests/testthat/testdata/resC3.RData
 b12e8202374636d3707c282a1789e47e *tests/testthat/testdata/resC4.RData
-2eed7be9c9ec5345da16cc3a53fc1398 *vignettes/DirichletReg-vig.Rnw
+630cf797f967aeffcce545af55ff60e1 *vignettes/DirichletReg-vig.Rnw

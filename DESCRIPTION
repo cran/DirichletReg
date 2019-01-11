@@ -1,6 +1,6 @@
 Package: DirichletReg
 Type: Package
-Version: 0.6-3
+Version: 0.6-3.1
 Date: 2015-11-12
 Title: Dirichlet Regression in R
 Description: Implements Dirichlet regression models in R.
@@ -15,14 +15,17 @@ Suggests: testthat
 License: GPL (>= 2)
 URL: http://dirichletreg.r-forge.r-project.org/
         http://r-forge.r-project.org/projects/dirichletreg/
-        http://CRAN.R-project.org/package=DirichletReg
+        https://CRAN.R-project.org/package=DirichletReg
 ByteCompile: yes
 LazyLoad: yes
 LazyData: yes
 ZipData: yes
 NeedsCompilation: yes
-Packaged: 2015-11-12 11:27:00 UTC; maier
+Packaged: 2019-01-09 13:22:31 UTC; ripley
 Author: Marco Johannes Maier [cre, aut]
-Maintainer: Marco Johannes Maier <marco.maier@wu.ac.at>
+Maintainer: ORPHANED
 Repository: CRAN
-Date/Publication: 2015-11-12 19:12:33
+Date/Publication: 2019-01-11 06:25:05 UTC
+X-CRAN-Original-Maintainer: Marco Johannes Maier <marco.maier@wu.ac.at>
+X-CRAN-Comment: Orphaned and corrected on 2019-01-11 as check issues
+        were not corrected after 2 months and a reminder.

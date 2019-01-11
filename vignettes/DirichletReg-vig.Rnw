@@ -10,6 +10,8 @@ options(
 )
 library("DirichletReg")
 @
+% Needed for fancyvrb 3.0, which jss.cls calls
+\PassOptionsToPackage{rgb}{xcolor} 
 \documentclass[nojss]{jss}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
