@@ -1,5 +1,18 @@
 News for Package 'DirichletReg'
 
+Changes in Version 0.7-0:
+
+  • Fixed: Cutoff in formula-deparsing removed.
+
+  • Removed 'rgl' dependency (package will be loaded if necessary).
+
+  • Moved to GitHub.
+
+Changes in Version 0.6-3:
+
+  • Instead of producing an error, density functions now return 'NaN'
+    with a warning if any element in 'alpha' is <= 0.
+
 Changes in Version 0.6-2:
 
   • Fixed an error in the ternary plot (bottom axis tick labels were
@@ -7,6 +20,7 @@ Changes in Version 0.6-2:
 
   • Imports functions from default packages, as required by the new
     CRAN-check.
+
   • Changed the 'Description' field to eliminate the note "Malformed
     Description field: should contain one or more complete sentences."
     when checking the package.
@@ -40,9 +54,10 @@ Changes in Version 0.6-0:
     will fail.  This will be handled automatically in subsequent
     releases, but for now, please remove the respective terms.  If you
     fit a model and it says something like:
-    
+
     Error in prepareFixed(start = start, activePar = NULL, fixed = fixed) :
     At least one parameter must not be fixed using argument 'fixed'
+    
     you most likely have collinear terms or "empty" combinations of
     interaction terms.
 

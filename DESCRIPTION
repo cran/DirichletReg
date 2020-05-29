@@ -1,31 +1,33 @@
 Package: DirichletReg
 Type: Package
-Version: 0.6-3.1
-Date: 2015-11-12
+Version: 0.7-0
+Date: 2020-05-28
 Title: Dirichlet Regression in R
 Description: Implements Dirichlet regression models in R.
 Authors@R: person(given  = c("Marco", "Johannes"),
                   family = "Maier",
-                  email  = "marco.maier@wu.ac.at",
-                  role   = c("cre", "aut"))
+                  email  = "marco_maier@posteo.de",
+                  role   = c("cre", "aut"),
+                  comment = c(ORCID = "0000-0002-1715-7456"))
 Encoding: UTF-8
-Depends: R (>= 3.0.0), Formula, rgl
+Depends: R (>= 3.0.0), Formula
 Imports: stats, graphics, methods, maxLik
-Suggests: testthat
+Suggests: rgl, knitr, formatR, testthat
 License: GPL (>= 2)
-URL: http://dirichletreg.r-forge.r-project.org/
-        http://r-forge.r-project.org/projects/dirichletreg/
+URL: https://github.com/maiermarco/DirichletReg
         https://CRAN.R-project.org/package=DirichletReg
 ByteCompile: yes
 LazyLoad: yes
 LazyData: yes
 ZipData: yes
-NeedsCompilation: yes
-Packaged: 2019-01-09 13:22:31 UTC; ripley
+VignetteBuilder: knitr
 Author: Marco Johannes Maier [cre, aut]
-Maintainer: ORPHANED
+    (<https://orcid.org/0000-0002-1715-7456>)
+Maintainer: Marco Johannes Maier <marco_maier@posteo.de>
 Repository: CRAN
-Date/Publication: 2019-01-11 06:25:05 UTC
-X-CRAN-Original-Maintainer: Marco Johannes Maier <marco.maier@wu.ac.at>
-X-CRAN-Comment: Orphaned and corrected on 2019-01-11 as check issues
-        were not corrected after 2 months and a reminder.
+Repository/R-Forge/Project: dirichletreg
+Repository/R-Forge/Revision: 32
+Repository/R-Forge/DateTimeStamp: 2020-05-28 18:49:22
+Date/Publication: 2020-05-29 12:30:14 UTC
+NeedsCompilation: yes
+Packaged: 2020-05-28 19:13:07 UTC; rforge

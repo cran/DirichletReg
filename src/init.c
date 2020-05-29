@@ -1,3 +1,6 @@
+// generated using
+// tools::package_native_routine_registration_skeleton()
+
 #include <R.h>
 #include <Rinternals.h>
 #include <stdlib.h> // for NULL
