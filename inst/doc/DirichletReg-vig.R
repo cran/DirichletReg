@@ -7,7 +7,7 @@ knitr::opts_chunk$set(
   , fig.height=7
 )
 
-## ---- message = FALSE---------------------------------------------------------
+## ----message = FALSE----------------------------------------------------------
 library("DirichletReg")
 head(ArcticLake)
 
@@ -15,13 +15,13 @@ AL <- DR_data(ArcticLake[,1:3])
 
 AL[1:6,]
 
-## ---- fig.show='hold', fig.cap = "Figure 1: Arctic lake: Ternary plot and depth vs. composition. (left)"----
+## ----fig.show='hold', fig.cap = "Figure 1: Arctic lake: Ternary plot and depth vs. composition. (left)"----
 plot(AL, cex=.5, a2d=list(colored=FALSE, c.grid=FALSE))
 
-## ---- fig.show='hold', fig.cap = "Figure 1: Arctic lake: Ternary plot and depth vs. composition. (right)"----
+## ----fig.show='hold', fig.cap = "Figure 1: Arctic lake: Ternary plot and depth vs. composition. (right)"----
 plot(rep(ArcticLake$depth,3),as.numeric(AL), pch=21, bg=rep(c("#E495A5", "#86B875", "#7DB0DD"),each=39), xlab="Depth (m)", ylab="Proportion", ylim=0:1)
 
-## ---- tidy=TRUE---------------------------------------------------------------
+## ----tidy=TRUE----------------------------------------------------------------
 lake1 <- DirichReg(AL~depth, ArcticLake)
 lake1
 
@@ -32,7 +32,7 @@ anova(lake1,lake2)
 
 summary(lake2)
 
-## ---- fig.show='hold', fig.cap = "Figure 2: Arctic lake: Fitted values of the quadratic model."----
+## ----fig.show='hold', fig.cap = "Figure 2: Arctic lake: Fitted values of the quadratic model."----
 par(mar=c(4, 4, 4, 4)+0.1)
 plot(rep(ArcticLake$depth,3),as.numeric(AL),
      pch=21, bg=rep(c("#E495A5", "#86B875", "#7DB0DD"),each=39),
@@ -57,7 +57,7 @@ X <- data.frame(depth=seq(dd[1], dd[2], length.out=200))
 
 pp <- predict(DirichReg(AL~depth+I(depth^2),AL), X)
 
-## ---- fig.cap = "Figure 3: Arctic lake: OLS (dashed) vs. Dirichlet regression (solid) predictions."----
+## ----fig.cap = "Figure 3: Arctic lake: OLS (dashed) vs. Dirichlet regression (solid) predictions."----
 plot(AL$AL, cex=.1, reset_par=FALSE)
 points(toSimplex(AL$AL), pch=16, cex=.5, col=gray(.5))
 
@@ -82,7 +82,7 @@ anova(blood1, blood2)
 
 summary(blood1)
 
-## ---- fig.cap="Blood samples: Box plots and fitted values (dashed lines indicate the fitted values for each group)."----
+## ----fig.cap="Blood samples: Box plots and fitted values (dashed lines indicate the fitted values for each group)."----
 par(mfrow=c(1,4), mar=c(4,4,4,2)+.25)
 for(i in 1:4){
   boxplot(Bld$Smp[,i]~Bld$Disease, ylim=range(Bld$Smp[,1:4]), main=paste(names(Bld)[i]), xlab="Disease Type", ylab="Proportion")
@@ -98,7 +98,7 @@ LP <- L / rowSums(L)
 dimnames(LP) <- list(paste("C",1:6), c("A", "B"))
 print(data.frame(round(LP * 100, 1),"pred."=as.factor(ifelse(LP[,1]>LP[,2], "==> A", "==> B"))),print.gap=2)
 
-## ---- fig.cap = "Blood samples: Observed values and predictions"--------------
+## ----fig.cap = "Blood samples: Observed values and predictions"---------------
 B2 <- DR_data(BloodSamples[,c(1,2,4)])
 plot(B2, cex=.001, reset_par=FALSE)
 
@@ -127,7 +127,7 @@ rs1 <- DirichReg(acc ~ dyslexia*iq | dyslexia*iq, RS, model="alternative")
 rs2 <- DirichReg(acc ~ dyslexia*iq | dyslexia+iq, RS, model="alternative")
 anova(rs1,rs2)
 
-## ---- fig.cap="Reading skills: Predicted values of Dirichlet regression and OLS regression."----
+## ----fig.cap="Reading skills: Predicted values of Dirichlet regression and OLS regression."----
 g.ind <- as.numeric(RS$dyslexia)
 g1 <- g.ind == 1   # normal
 g2 <- g.ind != 1   # dyslexia
@@ -172,7 +172,7 @@ confint(rs2)
 
 confint(rs2, exp=TRUE)
 
-## ---- fig.height=7/2*3, fig.cap="Reading skills: residual plots of OLS and Dirichlet regression models."----
+## ----fig.height=7/2*3, fig.cap="Reading skills: residual plots of OLS and Dirichlet regression models."----
 gcol <- c("#E495A5", "#39BEB1")[3-as.numeric(RS$dyslexia)]
 tmt <- c(-3,3)
 

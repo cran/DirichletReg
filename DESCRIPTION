@@ -1,7 +1,7 @@
 Package: DirichletReg
 Type: Package
-Version: 0.7-1
-Date: 2021-04-29
+Version: 0.7-2
+Date: 2025-05-30
 Title: Dirichlet Regression
 Description: Implements Dirichlet regression models.
 Authors@R: person(given  = c("Marco", "Johannes"),
@@ -21,13 +21,10 @@ LazyLoad: yes
 LazyData: yes
 ZipData: yes
 VignetteBuilder: knitr
-Author: Marco Johannes Maier [cre, aut]
-    (<https://orcid.org/0000-0002-1715-7456>)
+NeedsCompilation: yes
+Packaged: 2025-05-30 17:11:28 UTC; mm
+Author: Marco Johannes Maier [cre, aut] (ORCID:
+    <https://orcid.org/0000-0002-1715-7456>)
 Maintainer: Marco Johannes Maier <marco_maier@posteo.de>
 Repository: CRAN
-Repository/R-Forge/Project: dirichletreg
-Repository/R-Forge/Revision: 33
-Repository/R-Forge/DateTimeStamp: 2021-05-18 09:47:56
-Date/Publication: 2021-05-18 10:30:03 UTC
-NeedsCompilation: yes
-Packaged: 2021-05-18 10:12:52 UTC; rforge
+Date/Publication: 2025-05-31 00:20:02 UTC
