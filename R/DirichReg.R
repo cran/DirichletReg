@@ -249,9 +249,9 @@ if(verbosity > 0){
   }
 
   dimnames(hessian) <- list(coefnames, coefnames)
-  dimnames(vcov) <- list(coefnames, coefnames)
-  shortnames <- names(coefs)
-  names(coefs) <- coefnames
+  dimnames(vcov)    <- list(coefnames, coefnames)
+  shortnames        <- names(coefs)
+  names(coefs)      <- coefnames
 
   se <- if(!any(is.na(vcov))) sqrt(diag(vcov)) else rep(NA, length(coefs))
 

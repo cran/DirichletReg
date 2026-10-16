@@ -1,14 +1,15 @@
 ## ----setup, include = FALSE---------------------------------------------------
-knitr::opts_chunk$set(
-    collapse = TRUE
-  , comment = "##"
-  , tidy = TRUE
-  , fig.width=7
-  , fig.height=7
+  knitr::opts_chunk$set(
+      collapse   = TRUE
+    , comment    = "##"
+    , tidy       = TRUE
+    , fig.width  = 7L
+    , fig.height = 7L
+    , tidy.opts  = list(blank = TRUE, width.cutoff = 75L, indent = 4L)
 )
 
 ## ----message = FALSE----------------------------------------------------------
-library("DirichletReg")
+library(DirichletReg)
 head(ArcticLake)
 
 AL <- DR_data(ArcticLake[,1:3])

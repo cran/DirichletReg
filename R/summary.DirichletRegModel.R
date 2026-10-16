@@ -1,6 +1,10 @@
 summary.DirichletRegModel <- function(object, ...) {
 
-  if(object$optimization$convergence > 2L) stop("\n", paste(strwrap(paste("\nOptimization did not converge in",object$optimization$bfgs.it,"+",object$optimization$iterations,"iterations and exited with code",object$optimization$convergence), getOption("width")),sep="\n",collapse="\n"))
+  .wd <- getOption("width")
+  
+  if(!(object$optimization$convergence %in% c(1L, 2L, 8L))){
+    warning(paste(strwrap(paste("\nOptimization did (most likely) not converge in",object$optimization$bfgs.it,"+",object$optimization$iterations,"iterations and exited with code",object$optimization$convergence),.wd),sep="\n",collapse="\n"))
+  }
 
   res <- structure(list(
     call = object[["call"]],

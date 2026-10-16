@@ -4,8 +4,9 @@ print.DirichletRegModel <- function(x, digits = max(3L, getOption("digits") - 3L
 
   names(x$coefficients) <- x$coefnames
 
-  if(x$optimization$convergence == 3) cat("\n",strwrap("CAUTION! Possible convergence problems!",.wd),"\n",sep="")
-  if(x$optimization$convergence > 3) stop("\n",paste(strwrap(paste("\nOptimization did not converge in",x$optimization$bfgs.it,"+",x$optimization$iterations,"iterations and exited with code",x$optimization$convergence),.wd),sep="\n",collapse="\n"))
+  if(!(x$optimization$convergence %in% c(1L, 2L, 8L))){
+    warning(paste(strwrap(paste("\nOptimization did (most likely) not converge in",x$optimization$bfgs.it,"+",x$optimization$iterations,"iterations and exited with code",x$optimization$convergence),.wd),sep="\n",collapse="\n"))
+  }
 
   if(interactive()) writeLines("")
 

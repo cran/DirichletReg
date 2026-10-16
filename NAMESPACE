@@ -1,4 +1,4 @@
-useDynLib("DirichletReg", .registration = TRUE)
+useDynLib("DirichletReg", .registration = TRUE, .fixes = "C_")
 
 import("maxLik")
 import("Formula")
