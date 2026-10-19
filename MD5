@@ -1,6 +1,6 @@
-c53407ead0aaeb8465ede24f4599a98f *DESCRIPTION
+035e5abf28ff7a0923dadd4032444f56 *DESCRIPTION
 35b852d8be8bb6eef2a874c48356fd21 *NAMESPACE
-4c89fc78b805a31be5d1431cac4dbfd7 *NEWS
+aee23b5d93f269b177c5f0a1adb06e86 *NEWS
 706e5285d20ba64790edb0df64d24a54 *R/AIC.DirichletRegModel.R
 db1eb1a7bc472c3f8a4889ba7c65c093 *R/DR_LL_alt.R
 6f09648ed6f405d22bd3b446141f4f25 *R/DR_LL_common.R
@@ -37,7 +37,7 @@ c48eefdc9bcc85c316ba4d46a0b00f48 *R/toTernaryQuaternary.R
 ecdda9e6aa27d081fc473df1525948f4 *R/update.DirichletRegModel.R
 98038aaa439e5a9f0523b98538bcd274 *R/vcov.DirichletRegModel.R
 acd4f61e95aa1dfdb462037e9d88b25c *R/zzz.R
-c482349b0ee84e38ea28c1b5157366ca *build/partial.rdb
+267a74e1dc4a4385fecc898560b50b57 *build/partial.rdb
 6456b0103a6dd809f261cd5b286055ee *build/vignette.rds
 ab8c9c238fc9ec3afbf59e0e6eee316e *data/ArcticLake.RData
 5d3e932f660c051421931b771b6c74c4 *data/BloodSamples.RData
@@ -45,11 +45,11 @@ d45158b7de82af7cc1ee1dad61905d5d *data/GlacialTills.RData
 a4a0264929b76be9bc6fbcd6283e12e5 *data/ReadingSkills.RData
 3c38b8d841568a3274ace8253e30342e *data/Rocks.RData
 ae27168e3695a237d770ba5619ba17cd *inst/CITATION
-00340c1aa9b67d56234e18252f4fe1be *inst/NEWS.Rd
-2a8a6920fb0216494b28c475bf7ab96e *inst/NEWS.pdf
+a5ba023f664a7e0ee88bcf1972055770 *inst/NEWS.Rd
+d9702923cafa25e9a5b00fce0b742dc6 *inst/NEWS.pdf
 b8336b68bcb7b9edac2d8bcd1e2e5da7 *inst/doc/DirichletReg-vig.R
 b6842505a64a164d497d3814eab91da3 *inst/doc/DirichletReg-vig.Rmd
-6f2d0e0c3a5c35a2d52563638f593906 *inst/doc/DirichletReg-vig.html
+edc5280446256d604ae75ccb331369ab *inst/doc/DirichletReg-vig.html
 06ee6b239189c143b230cc6e27b51d82 *man/ArcticLake.Rd
 6cb4f29405990bdd640b69b022616d3a *man/BloodSamples.Rd
 8b12252356c07072f7434acd5b4ff2de *man/DR_data.Rd
@@ -73,7 +73,7 @@ a703e3a4b77de410132bae5819a51f2e *src/wght_LL_grad_alternative.c
 ea19b7da1136c7a0560e8a0271434eaa *tests/testthat.R
 54ff3c2683ae6d00465d83129a643562 *tests/testthat/test-ArcticTests_AltPar.R
 b6263ab324bb1a808cc2382251e22d1c *tests/testthat/test-ArcticTests_CommPar.R
-065df425c131721345dedbf30ca8d77f *tests/testthat/test-DR_data.R
+33f532d55e47747af52223527adeb694 *tests/testthat/test-DR_data.R
 e943e7a6b868fcb984c5bb6eabbb2bb3 *tests/testthat/testdata/resA1_1.RData
 a422ddb56b7b65f97f8adecbc0a3428b *tests/testthat/testdata/resA2_1.RData
 0464ae1cfee8d1321d15e2e1e39ac3e1 *tests/testthat/testdata/resC1.RData

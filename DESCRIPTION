@@ -1,7 +1,7 @@
 Package: DirichletReg
 Type: Package
-Version: 0.7-3
-Date: 2026-10-16
+Version: 0.7-4
+Date: 2026-10-19
 Title: Dirichlet Regression
 Description: Implements Dirichlet regression models.
 Authors@R: person(given   = c("Marco", "Johannes"),
@@ -24,9 +24,9 @@ ZipData: yes
 VignetteBuilder: knitr
 Config/testthat/edition: 3
 NeedsCompilation: yes
-Packaged: 2026-10-16 19:20:24 UTC; mm
+Packaged: 2026-10-19 11:18:28 UTC; mm
 Author: Marco Johannes Maier [cre, aut] (ORCID:
     <https://orcid.org/0000-0002-1715-7456>)
 Maintainer: Marco Johannes Maier <marco_maier@posteo.de>
 Repository: CRAN
-Date/Publication: 2026-10-16 20:00:02 UTC
+Date/Publication: 2026-10-19 14:10:02 UTC
